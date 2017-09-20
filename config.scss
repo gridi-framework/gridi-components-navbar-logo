@@ -1,0 +1,22 @@
+$gridi-component-navbar-logo-max-height: ($gridi-component-navbar-height - 25px) !default;
+//Defined logo max height for each screens.
+$gridi-component-navbar-logo-max-height-for-screens: (
+    s5: (map_get($gridi-component-navbar-height-for-screens, s5) - 35px)
+) !default;
+
+$gridi-component-navbar-logo-alt-font-family: null !default;
+$gridi-component-navbar-logo-alt-font-size: 1.6em !default;
+//Defined logo alt font size for each screens.
+$gridi-component-navbar-logo-alt-font-size-for-screens: (
+    s5: 2em,
+) !default;
+
+$gridi-component-navbar-logo-alt-line-height: normal !default;
+//Defined logo alt line-height for each screens.
+/*
+$gridi-component-navbar-logo-alt-line-height-for-screens: (
+    s1: 2em,
+    ...
+) !default;
+*/
+$gridi-component-navbar-logo-alt-color: null !default;
