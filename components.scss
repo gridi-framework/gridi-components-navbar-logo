@@ -3,7 +3,7 @@
         font-family: $gridi-components-navbar-logo-alt-font-family;
     }
     font-size: $gridi-components-navbar-logo-alt-font-size;
-    @if variable-exists(gridi-components-navbar-logo-alt-font-size-for-screens) {
+    @if is-map($gridi-components-navbar-logo-alt-font-size-for-screens) {
         @each $screen-prefix, $sizes in get-screens-map() {
             @if map-has-key($gridi-components-navbar-logo-alt-font-size-for-screens, $screen-prefix) {
                 @media(min-width: get-screen-size($screen-prefix, min)) {
@@ -13,7 +13,7 @@
         }
     }
     line-height: $gridi-components-navbar-logo-alt-line-height;
-    @if variable-exists(gridi-components-navbar-logo-alt-line-height-for-screens) {
+    @if is-map($gridi-components-navbar-logo-alt-line-height-for-screens) {
         @each $screen-prefix, $sizes in get-screens-map() {
             @if map-has-key($gridi-components-navbar-logo-alt-line-height-for-screens, $screen-prefix) {
                 @media(min-width: get-screen-size($screen-prefix, min)) {
@@ -31,7 +31,7 @@
         max-height: $gridi-components-navbar-logo-max-height;
         margin: 0;
         vertical-align: middle;
-        @if variable-exists(gridi-components-navbar-logo-max-height-for-screens) {
+        @if is-map($gridi-components-navbar-logo-max-height-for-screens) {
             @each $screen-prefix, $sizes in get-screens-map() {
                 @if map-has-key($gridi-components-navbar-logo-max-height-for-screens, $screen-prefix) {
                     @media(min-width: get-screen-size($screen-prefix, min)) {
